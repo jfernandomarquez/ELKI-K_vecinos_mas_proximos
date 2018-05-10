@@ -20,9 +20,7 @@ Para ejecutarlo se escribe en la terminal, por ejemplo:
 
 $./KNN_input.sh mydata/exampledata.txt 1
 
-## Segundo Paso
-
-**Establecer los parametros de entrada para el algoritmo KNN:**
+## Establecer los parametros de entrada para el algoritmo KNN
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset
 
