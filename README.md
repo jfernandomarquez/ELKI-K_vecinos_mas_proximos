@@ -26,7 +26,7 @@ $./KNN_input.sh mydata/exampledata.txt 1
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset
 
-Según la bibliografía estudiada los mejores valores para el analisis de logs con KNN se encuntran entre 4 y 10, según [Anomaly Detection in Application Log Data](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y) [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf)
+Según la bibliografía estudiada los mejores valores para el analisis de logs con KNN se encuntran entre 4 y 10, según [Anomaly Detection in Application Log Data](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y) y [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf)
 
 
 
