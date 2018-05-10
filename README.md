@@ -9,7 +9,9 @@ Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el com
 
 > Aquí se puede descargar el jar: [elki-bundle-0.7.1.jar](https://elki-project.github.io/releases/release0.7.1/elki-bundle-0.7.1.jar).
 
-Realiza script que como entrada toma un dataset y un valor de k, con el objetivo de estudiar el algoritmo, se le nombra *KNN_input.sh*
+Realiza script que como entrada toma un dataset y un valor de k, con el objetivo de estudiar el algoritmo, se le nombra *KNN_input.sh*. Para ejecutarlo se escribe en la terminal, por ejemplo:
+
+$./KNN_input.sh mydata/exampledata.txt 1
 
 ## Segundo Paso
 
