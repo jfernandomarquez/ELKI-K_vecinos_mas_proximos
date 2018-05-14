@@ -12,7 +12,13 @@ Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el com
 
 > Aquí se puede descargar el jar: [elki-bundle-0.7.1.jar](https://elki-project.github.io/releases/release0.7.1/elki-bundle-0.7.1.jar).
 
-Se realiza script que como entrada toma un dataset y un valor de k, llamado *KNN_input.sh*, con el objetivo de estudiar el algoritmo.
+El algoritmo que para este caso nos interesa es el KNNOutlier. Un ejemplo de como puede ser ejecutado es el siguiente:
+
+_java -jar elki-bundle-0.7.1.jar KDDCLIApplication -verbose -dbc.in dataset.txt -algorithm outlier.distance.KNNOutlier -knno.k 5
+
+donde dataset.txt puede ser cualquier dataset y 5 corresponde al parametro k.
+
+Se realiza un script que como entrada toma un dataset y un valor de k, llamado *KNN.sh*, con el objetivo de estudiar el algoritmo con diferentes datasets y parametros k de entrada.
 
 Donde: k es el numero de vecinos de un punto del que estamos interesados y dataset es el conjunto de datos al que le aplicamos el algoritmo.
 
