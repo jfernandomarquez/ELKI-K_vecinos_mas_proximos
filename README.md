@@ -24,7 +24,7 @@ Donde: k es el numero de vecinos de un punto del que estamos interesados y datas
 
 Para ejecutarlo se escribe en la terminal, por ejemplo:
 
-$./KNN_input.sh mydata/exampledata.txt 1
+$./KNN.sh mydata/exampledata.txt 5
 
 ## Establecer los parametros de entrada para el algoritmo KNN
 
