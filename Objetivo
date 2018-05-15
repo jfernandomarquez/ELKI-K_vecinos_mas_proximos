@@ -13,5 +13,9 @@ primera fase: empiza recolectando logs de multiples aplicaciones.
 2.2 Almacenar la cuenta en un dataset.
 2.3 Usar el algoritmo de deteción de anomalias KNNoutlier
 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-datehistogram-aggregation.html
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-metrics-valuecount-aggregation.html
+
 
 
