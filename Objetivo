@@ -9,7 +9,7 @@ primera fase: empiza recolectando logs de multiples aplicaciones.
 
 2. ¿Cómo se va a hacer?
 
-2.1 Consultar (query) una situación en especifico en elasticsearch usando python cada 5 min.
+2.1 Consultar (query) una evento en especifico en elasticsearch usando python cada 5 min, ejemplo: host, application,etc(aggregations)
 2.2 Almacenar la cuenta en un dataset.
 2.3 Usar el algoritmo de deteción de anomalias KNNoutlier
 
