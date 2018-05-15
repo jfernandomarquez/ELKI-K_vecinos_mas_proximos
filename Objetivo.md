@@ -1,5 +1,6 @@
+#Las anomalias que se quieren detectar en los logs de las aplicaciones son:
 
-un login aparece m·s veces que lo usual
-un login aparece menos veces que lo usual
-un login deja de aparecer
-un login nuevo aparece
+1. un usuario aparece m√°s veces que lo usual
+2. un usuario aparece menos veces que lo usual
+3. un usuario deja de aparecer
+4. un usuario nuevo aparece
