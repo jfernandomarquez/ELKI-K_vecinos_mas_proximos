@@ -39,8 +39,13 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 * Day
 * Count
 
+Continuará..
 
+### Extraer parametros para el algoritmo de Elasticsearch
 
+**Query**
+
+## Depurar los scripts y juntarlos en uno solo
 
 
 
