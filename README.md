@@ -47,7 +47,7 @@ Continuará..
 
 **Query**
 
-## Depurar los scripts
+## ...
 
 
 
