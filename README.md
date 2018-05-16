@@ -39,6 +39,8 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 * Day
 * Count
 
+ver el archivo *objetivo*
+
 Continuará..
 
 ### Extraer parametros para el algoritmo de Elasticsearch
