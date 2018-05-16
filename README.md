@@ -45,7 +45,7 @@ Continuará..
 
 **Query**
 
-## Depurar los scripts y juntarlos en uno solo
+## Depurar los scripts
 
 
 
