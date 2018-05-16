@@ -34,10 +34,10 @@ Según la bibliografía estudiada los mejores valores para el analisis de logs c
 
 Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmo KNNoutlier, con el cual se identificaron las siguientes entradas del algoritmo, para nuestro caso de detección de anomalias en logs de aplicaciones:
 
-**Minute**
-**Hour**
-**Day**
-**Count**
+* Minute
+* Hour
+* Day
+* Count
 
 
 
