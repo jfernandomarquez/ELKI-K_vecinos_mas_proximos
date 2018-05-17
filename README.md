@@ -30,18 +30,26 @@ $./KNN.sh mydata/exampledata.txt 5
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset
 
-Según la bibliografía estudiada los mejores valores para el analisis de logs con KNN se encuntran entre 4 y 10, según [Anomaly Detection in Application Log Data](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y) y [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf)
+Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 4 y 10, según [Anomaly Detection in Application Log Data](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y) y [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf)
 
-Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmo KNNoutlier, con el cual se identificaron las siguientes entradas del algoritmo, para nuestro caso de detección de anomalias en logs de aplicaciones:
+Ahora para el dataset se debe indicar que información se necesita. Las anomalias que se quieren detectar en los logs de las aplicaciones son:
+
+* Un usuario aparece más veces que lo usual
+* Un usuario aparece menos veces que lo usual
+* Un usuario deja de aparecer
+* Un usuario nuevo aparece
+
+Por lo tanto, se identificaron las siguientes variables que serviran como entrada al algoritmo.
 
 * Minute
 * Hour
 * Day
 * Count
 
-ver el archivo *objetivo*
+Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, que él utilizó para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el KNNoutlier.
 
-Continuará..
+
+
 
 ### Extraer parametros para el algoritmo de Elasticsearch
 
