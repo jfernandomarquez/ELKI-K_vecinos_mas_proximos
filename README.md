@@ -45,9 +45,9 @@ Continuará..
 
 ### Extraer parametros para el algoritmo de Elasticsearch
 
-**Query**
+>> **Query**
 
-POST /logstash-*/_search
+GET /windows-*/_search
 {
   "size": 0,
   "query": {
@@ -61,7 +61,22 @@ POST /logstash-*/_search
   }
 }
 
-## ...
+
+
+GET /windows-*/_search
+{
+    "size": 0,
+    "query": {
+        "range" : {
+            "@timestamp" : {
+                "gte" : "now-5m/m",
+                "lt" :  "now"
+            }
+        }
+    }
+}
+
+## Implementar KNNoutlier con dataset real
 
 
 
