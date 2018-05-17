@@ -47,6 +47,20 @@ Continuará..
 
 **Query**
 
+POST /logstash-*/_search
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": {
+        "match": {
+          "task": "Logon"
+        }
+      }
+    }
+  }
+}
+
 ## ...
 
 
