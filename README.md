@@ -59,6 +59,8 @@ GET /windows-*/_search
     }
   }
 }
+
+&nbsp;
 GET /windows-*/_search
 {
     "size": 0,
