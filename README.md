@@ -39,19 +39,23 @@ Ahora para el dataset se debe indicar que información se necesita. Las anomalia
 * Un usuario deja de aparecer
 * Un usuario nuevo aparece
 
-Por lo tanto, se identificaron las siguientes variables que serviran como entrada al algoritmo.
+Por lo tanto, se identificaron las siguientes variables que servirán como entrada al algoritmo, junto con el parametro k.
 
 * Minute
 * Hour
 * Day
 * Count
 
-Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, que él utilizó para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el KNNoutlier.
-
-
+Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, que él utilizó para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
 
 
 ### Extraer parametros para el algoritmo de Elasticsearch
+
+**¿Cómo se va a hacer?**
+
+* Consultar (query) una evento en especifico en elasticsearch usando python cada 5 min, ejemplo: host, application,etc(aggregations)
+* Almacenar la cuenta(hits) en un dataset, junto con el timestamp.
+* Usar el algoritmo de deteción de anomalias KNNoutlier
 
 > **Query**
 
