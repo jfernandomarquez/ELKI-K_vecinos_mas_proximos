@@ -45,8 +45,7 @@ Continuará..
 
 ### Extraer parametros para el algoritmo de Elasticsearch
 
->> **Query**
-
+> **Query**
 GET /windows-*/_search
 {
   "size": 0,
@@ -60,9 +59,6 @@ GET /windows-*/_search
     }
   }
 }
-
-
-
 GET /windows-*/_search
 {
     "size": 0,
