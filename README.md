@@ -59,31 +59,27 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 
 > **Query**
 
->GET /windows-*/_search
+>GET /windows-*/_search?filter_path=hits.total
 {
-  "size": 0,
   "query": {
     "bool": {
-      "must": {
-        "match": {
-          "task": "Logon"
+      "must": [
+        {
+          "match": {
+            "task": "Logon"
+          }
+        },
+        {
+          "range": {
+            "@timestamp": {
+              "gte": "now-5m/m",
+              "lt": "now"
+            }
+          }
         }
-      }
+      ]
     }
   }
-}
-
->GET /windows-*/_search
-{
-    "size": 0,
-    "query": {
-        "range" : {
-            "@timestamp" : {
-                "gte" : "now-5m/m",
-                "lt" :  "now"
-            }
-        }
-    }
 }
 
 ## Implementar KNNoutlier con dataset real
