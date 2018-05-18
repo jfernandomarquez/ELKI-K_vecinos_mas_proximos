@@ -59,7 +59,7 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 
 
 
-> **Query:** GET /windows-*/_search?filter_path=hits.total
+> **Query:** GET /logstash-*/_search?filter_path=hits.total
 {
   "query": {
     "bool": {
@@ -81,6 +81,7 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
     }
   }
 }
+*Nota:* Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
 ## Implementar KNNoutlier con dataset real
 
