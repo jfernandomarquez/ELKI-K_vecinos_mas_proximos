@@ -57,9 +57,9 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 * Almacenar la cuenta(hits) en un dataset, junto con el timestamp.
 * Usar el algoritmo de deteción de anomalias KNNoutlier
 
-> **Query**
 
->GET /windows-*/_search?filter_path=hits.total
+
+> **Query:** GET /windows-*/_search?filter_path=hits.total
 {
   "query": {
     "bool": {
