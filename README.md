@@ -46,7 +46,7 @@ Por lo tanto, se identificaron las siguientes variables que servirán como entra
 * Day
 * Count
 
-Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, que él utilizó para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
+Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, el cual fue utilizado para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el algoritmo KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
 
 
 ### Extraer parametros para el algoritmo de Elasticsearch
