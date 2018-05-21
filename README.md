@@ -83,7 +83,11 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 }
 *Nota:* Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
-## Implementar KNNoutlier con dataset real
+Con el fin de tener los datos de entrada del algoritmo en forma que permita servir como entrada para el algoritmo KNNoutlier, se desarrollo el script *QueryingES_v5.py*
+
+## Aplicar KNNoutlier con dataset real
+
+Lo primero que se debemos hacer es dejar el script que recolecta los datos corriendo
 
 
 
