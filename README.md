@@ -34,9 +34,9 @@ Según la bibliografía estudiada los mejores valores para k en el análisis de 
 
 Ahora para el dataset se debe indicar que información se necesita. Las anomalias que se quieren detectar en los logs de las aplicaciones son:
 
-* Un usuario aparece más veces que lo usual
-* Un usuario aparece menos veces que lo usual
-* Un usuario deja de aparecer
+* Los acceso exitosos aparece más veces que lo usual
+* Los acceso exitosos aparece menos veces que lo usual
+* Los acceso exitosos deja de aparecer
 * Un usuario nuevo aparece
 
 Por lo tanto, se identificaron las siguientes variables que servirán como entrada al algoritmo, junto con el parametro k.
