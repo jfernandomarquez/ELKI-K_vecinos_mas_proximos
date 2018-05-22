@@ -53,11 +53,9 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 
 **¿Cómo se va a hacer?**
 
-* Consultar (query) una evento en especifico en elasticsearch usando python cada 5 min, ejemplo: host, application,etc(aggregations)
+* Consultar (query) una evento en especifico en elasticsearch cada 5 min usando python, ejemplo: Accesos exitosos, fallo en la autenticación, etc.
 * Almacenar la cuenta(hits) en un dataset, junto con el timestamp.
-* Usar el algoritmo de deteción de anomalias KNNoutlier
-
-
+* Usar el algoritmo de deteción de anomalias KNNoutlier.
 
 > **Query:** GET /logstash-*/_search?filter_path=hits.total
 {
@@ -83,11 +81,11 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 }
 *Nota:* Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
-Con el fin de tener los datos de entrada del algoritmo en forma que permita servir como entrada para el algoritmo KNNoutlier, se desarrollo el script *QueryingES_v5.py*
+Con el fin de tener los datos de entrada del algoritmo en la forma que lo necesita KNNoutlier, se desarrollo el script *QueryingES_v5.py*
 
 ## Aplicar KNNoutlier con dataset real
 
-Lo primero que se debemos hacer es dejar el script que recolecta los datos corriendo
+Lo primero que se debemos hacer es dejar recolectar información, dejando correr el script *QueryingES_v5.py*...
 
 
 
