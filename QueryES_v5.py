@@ -10,7 +10,7 @@ es = Elasticsearch(['192.168.20.1:9200'])
 
 while True:
 	t=datetime.datetime.now()
-	r = es.search(index="windows-*", filter_path="hits.total", body={"query":{"bool":{"must":[{"match":{"task":"Logon"}},{"range":{"@timestamp":{"gte":"now-5m/m","lt":"now"}}}]}}})
+	r = es.search(index="logstash-*", filter_path="hits.total", body={"query":{"bool":{"must":[{"match":{"task":"Logon"}},{"range":{"@timestamp":{"gte":"now-5m/m","lt":"now"}}}]}}})
 	h=t.hour
 	m=t.minute
 	s=t.second
