@@ -83,6 +83,8 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 
 Con el fin de tener los datos de entrada del algoritmo en la forma que lo necesita KNNoutlier, se desarrollo el script *QueryingES_v5.py*
 
+Corriendo el colector de datos durante 24 horas, con una tasa de consulta de 5min, se genero un archivo de 10KB.
+
 ## Aplicar KNNoutlier con dataset real
 
 Lo primero que se debemos hacer es dejar recolectar información, dejando correr el script *QueryingES_v5.py*...
