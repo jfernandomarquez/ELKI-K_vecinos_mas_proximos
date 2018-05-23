@@ -23,7 +23,7 @@ es = Elasticsearch(['10.100.64.229:9200'])
 
 while True:
 	Y,m,d,H,M=tiempo()
-	r = es.search(index="windows-*", filter_path="hits.total", body={"query":{"bool":{"must":[{"match":{"task":"Logon"}},{"range":{"@timestamp":{"gte":"now-5m/m","lt":"now"}}}]}}})
+	r = es.search(index="logstash-*", filter_path="hits.total", body={"query":{"bool":{"must":[{"match":{"task":"Logon"}},{"range":{"@timestamp":{"gte":"now-5m/m","lt":"now"}}}]}}})
 	count=r["hits"]["total"]
 	f = open("mydata/dataset_real_{0}".format(id_doc)+".txt", "a")
 	f.write('  {}	{}	{}	{}	{}		{}	  {}\n'.format(Y,m,d,H,M,count,"Data"))
