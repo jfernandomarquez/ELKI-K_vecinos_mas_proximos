@@ -83,7 +83,7 @@ GET /logstash-*/_search?filter_path=hits.total
 }
 
 ```
-*Nota:* Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
+>Nota: Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
 Con el fin de tener los datos de entrada del algoritmo en la forma que lo necesita KNNoutlier, se desarrollo el script *QueryingES_v5.py*
 
