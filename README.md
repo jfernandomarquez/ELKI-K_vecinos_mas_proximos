@@ -57,7 +57,9 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
 * Almacenar la cuenta(hits) en un dataset, junto con el timestamp.
 * Usar el algoritmo de deteción de anomalias KNNoutlier.
 
-> **Query:** GET /logstash-*/_search?filter_path=hits.total
+**Query:**
+```javascript
+GET /logstash-*/_search?filter_path=hits.total
 {
   "query": {
     "bool": {
@@ -79,6 +81,8 @@ Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entr
     }
   }
 }
+
+```
 *Nota:* Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
 Con el fin de tener los datos de entrada del algoritmo en la forma que lo necesita KNNoutlier, se desarrollo el script *QueryingES_v5.py*
@@ -89,6 +93,27 @@ Corriendo el colector de datos durante 24 horas, con una tasa de consulta de 5mi
 
 Lo primero que se debemos hacer es dejar recolectar información, dejando correr el script *QueryingES_v5.py*...
 
+Se aplica el algoritmo de KNNoutlier, identificando comportamiento fuera de lo normal debido a la puntuación que le da el algoritmo a cada grupo de logs. 
+
+## Procedimiento para alertar sobre anomalías (Basado en procedimiento de IBM)
+
+Con el fin de enviar correo con el detalle de la anomalía detectada al personal correspondiente, debemos seguir los siguientes pasos:
+
+1. crear y guardar un busqueda por el evento indeseable, y guardar la cuenta mas algún id que permita saber a que grupo se refiere.
+
+2. Aplicar el algoritmo de detección de anomalías a la busqueda guardada, y cuando la puntuación que da el algoritmo supere un umbral enviar la información que permita identificar esos eventos al grupo a elasticsearch.
+
+3. Programar un regla en sentinl(plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones.
+
+
+### Alertar cuando un usuarios se conecte en horarios fuera de oficina
+
+1. Programar un busqueda en horarios fuera de oficina cada 30 min.
+2. Cuando se tenga un usuario diferente a los autorizados enviar una alerta por correo.
+
+### Alertar cuando usuario se conecte por VPN en un pais diferente a CO
+
+1. Utilizar la utilidad de detección de anomalias de sentinl 
 
 
 
