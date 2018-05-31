@@ -116,4 +116,6 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 1. Utilizar la utilidad de detección de anomalias de sentinl 
 
 
+# "Is the data the same as yesterday at the same time?"
+
 
