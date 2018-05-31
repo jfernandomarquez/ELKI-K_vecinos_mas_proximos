@@ -117,5 +117,6 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 
 # "Is the data the same as yesterday at the same time?"
+# "How much does the data change when it compares this minute to the minute before?"
 
 
