@@ -8,3 +8,6 @@ Bibliografía
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
 * [Anomaly Detection from Log Files Using Data Mining Techniques](http://jbreier.com/files/papers/icisa_2015.pdf)
+* [Experience Report: System Log Analysis for Anomaly Detection](https://pdfs.semanticscholar.org/2c1e/d7e32a85d72fb270ebd07a45641acfba02a9.pdf)
+
+
