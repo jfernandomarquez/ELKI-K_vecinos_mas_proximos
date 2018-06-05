@@ -16,7 +16,7 @@ El algoritmo que para este caso nos interesa es el KNNOutlier. Un ejemplo de com
 
 _java -jar elki-bundle-0.7.1.jar KDDCLIApplication -verbose -dbc.in dataset.txt -algorithm outlier.distance.KNNOutlier -knno.k 5
 
-donde dataset.txt puede ser cualquier dataset y 5 corresponde al parametro k.
+donde dataset.txt puede ser cualquier dataset y 5 corresponde al parametro k. [Mas ejemplos](https://elki-project.github.io/releases/release0.7.0/doc/examplecalls.html)
 
 Se realiza un script que como entrada toma un dataset y un valor de k, llamado *KNN.sh*, con el objetivo de estudiar el algoritmo con diferentes datasets y parametros k de entrada.
 
