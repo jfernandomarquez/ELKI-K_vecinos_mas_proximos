@@ -39,7 +39,7 @@ Ahora para el dataset se debe indicar que información se necesita. Las anomalia
 * Los acceso exitosos deja de aparecer
 * Un usuario nuevo aparece
 
-> Algunos ejemplos de archivos de logs son: transaction log file, event log file, audit log file, server logs, etc.
+> Algunos ejemplos de archivos de logs son: transaction log file, event log file, audit log file, server logs, etc. Syslog messages provide the information by where, when and why, i.e., IP-Address, Timestamp and the log message.
 
 Por lo tanto, se identificaron las siguientes variables que servirán como entrada al algoritmo, junto con el parametro k.
 
