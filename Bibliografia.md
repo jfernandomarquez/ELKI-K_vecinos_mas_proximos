@@ -11,6 +11,10 @@ Bibliografía
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
 * [Anomaly Detection from Log Files Using Data Mining Techniques](http://jbreier.com/files/papers/icisa_2015.pdf)
 
+## Páginas Web
+
+* * [Log Analytics, Log Mining and Anomaly Detection with AI, Deep Learning](https://www.xenonstack.com/blog/data-science/log-analytics-log-mining-anomaly-detection/)
+
 
 
 
