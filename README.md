@@ -34,6 +34,11 @@ Para ejecutarlo se escribe en la terminal, por ejemplo:
 ```bash
 $./KNN.sh mydata/exampledata.txt 5
 ```
+
+> Este es el script [KNN.sh](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/KNN.sh), que sirve, además de ejecutar el algoritmo en el dataset, para mostrar los resultados.
+
+
+
 ## Establecer los parametros de entrada para el algoritmo KNN
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset
