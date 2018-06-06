@@ -110,7 +110,7 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 2. Aplicar el algoritmo de detección de anomalías a la busqueda guardada, y cuando la puntuación que da el algoritmo supere un umbral enviar la información que permita identificar esos eventos al grupo a elasticsearch.
 
-3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones, como se observa [aquí](https://github.com/jfernandomarquez/Consultas-Elasticsearch/blob/master/Configuracion_watchers_sentinl.md). 
+3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones, como se observa [aquí](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Configuracion_watchers_sentinl.md). 
 
 **Inspiración:**
 
