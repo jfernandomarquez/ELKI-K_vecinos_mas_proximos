@@ -1,5 +1,4 @@
-# ELKI-K_vecinos_mas_proximos
-Implementación del algoritmo KNN (K_vecinos_más_próximos) del framework ELKI.
+# Implementación del algoritmo KNN (K_vecinos_más_próximos) del framework ELKI
 
 **Idea principal del algoritmo:** “A point in a data set is an outlier with respect to parameters k and d if no more than k
 points in the data set are at a distance of d or less from p.” [Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
