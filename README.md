@@ -59,10 +59,12 @@ Ahora para el dataset se debe indicar que información se necesita. Las anomalia
 
 Por lo tanto, se identificaron las siguientes variables que servirán como entrada al algoritmo, junto con el parametro k.
 
-* Minute
-* Hour
-* Day
-* Count
+* Año
+* Mes
+* Dia
+* Hora
+* Minuto
+* Cuenta
 
 Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, el cual fue utilizado para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el algoritmo KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
 
