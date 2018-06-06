@@ -7,11 +7,17 @@ El algoritmo KNN de ELKI esta desarrollado en java y se usara como Herramiento d
 
 ## Ejecutar los algoritmos de ELKI
 
-Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el comando que se encuentra en *CLI-ELKI_0.2.sh*, en este script se usando ELKI como una herramienda de linea de comandos en la terminal de linux. Se hace un script con el fin de programar la ejecución del algoritmo más adelante.
+Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el comando:
 
-> Aquí se puede descargar el jar: [elki-bundle-0.7.1.jar](https://elki-project.github.io/releases/release0.7.1/elki-bundle-0.7.1.jar).
+```javascript
+java -jar elki-bundle-0.7.1.jar KDDCLIApplication -dbc.in mydata/mouse.csv -algorithm clustering.kmeans.KMedoidsEM -kmeans.k 1 -resulthandler ResultWriter -out.gzi -out output/k-1
+```
 
-El algoritmo que para este caso nos interesa es el KNNOutlier. Un ejemplo de como puede ser ejecutado es el siguiente:
+Al fin y al cabo se usa ELKI como una herramienda de linea de comandos en la terminal de linux. Se hace un script con el fin de programar la ejecución del algoritmo más adelante.
+
+> Aquí se puede descargar el .jar: [elki-bundle-0.7.1.jar](https://elki-project.github.io/releases/release0.7.1/elki-bundle-0.7.1.jar).
+
+El algoritmo que para este caso nos interesa usar de todos los que hay en el framework ELKI es el KNNOutlier. Un ejemplo de como puede ser ejecutado es el siguiente:
 
 ```javascript
 _java -jar elki-bundle-0.7.1.jar KDDCLIApplication -verbose -dbc.in dataset.txt -algorithm outlier.distance.KNNOutlier -knno.k 5
