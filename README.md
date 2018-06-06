@@ -110,7 +110,7 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 2. Aplicar el algoritmo de detección de anomalías a la busqueda guardada, y cuando la puntuación que da el algoritmo supere un umbral enviar la información que permita identificar esos eventos al grupo a elasticsearch.
 
-3. Programar un regla en sentinl(plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones.
+3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones.
 
 
 ### Alertar cuando un usuarios se conecte en horarios fuera de oficina
@@ -120,10 +120,10 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 ### Alertar cuando usuario se conecte por VPN en un pais diferente a CO
 
-1. Utilizar la utilidad de detección de anomalias de sentinl 
+1. Utilizar la utilidad de detección de anomalías de sentinl 
 
 
-# "Is the data the same as yesterday at the same time?"
-# "How much does the data change when it compares this minute to the minute before?"
+> "Is the data the same as yesterday at the same time?"
+> "How much does the data change when it compares this minute to the minute before?"
 
 
