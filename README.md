@@ -14,7 +14,9 @@ Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el com
 
 El algoritmo que para este caso nos interesa es el KNNOutlier. Un ejemplo de como puede ser ejecutado es el siguiente:
 
+```javascript
 _java -jar elki-bundle-0.7.1.jar KDDCLIApplication -verbose -dbc.in dataset.txt -algorithm outlier.distance.KNNOutlier -knno.k 5
+```
 
 donde dataset.txt puede ser cualquier dataset y 5 corresponde al parametro k. [Mas ejemplos](https://elki-project.github.io/releases/release0.7.0/doc/examplecalls.html)
 
@@ -24,8 +26,9 @@ Donde: k es el numero de vecinos de un punto del que estamos interesados y datas
 
 Para ejecutarlo se escribe en la terminal, por ejemplo:
 
+```bash
 $./KNN.sh mydata/exampledata.txt 5
-
+```
 ## Establecer los parametros de entrada para el algoritmo KNN
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset
