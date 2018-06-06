@@ -102,7 +102,7 @@ Lo primero que se debemos hacer es dejar recolectar información, dejando correr
 
 Se aplica el algoritmo de KNNoutlier, identificando comportamiento fuera de lo normal debido a la puntuación que le da el algoritmo a cada grupo de logs. 
 
-## Procedimiento para alertar sobre anomalías (Basado en procedimiento de IBM)
+## Procedimiento para alertar sobre anomalías ([Basado en procedimiento de IBM](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html))
 
 Con el fin de enviar correo con el detalle de la anomalía detectada al personal correspondiente, debemos seguir los siguientes pasos:
 
