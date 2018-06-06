@@ -3,9 +3,9 @@ Bibliografía
 
 ## Principales
 
-1. [Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://github.com/repat/README-template/blob/master/README-websites-gh-pages.md)
+[1] [Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://github.com/repat/README-template/blob/master/README-websites-gh-pages.md)
 
-2. [Efficient Algorithms for Mining Outliers from Large DataSets, Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
+[2] [Efficient Algorithms for Mining Outliers from Large DataSets, Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
 
 * [Experience Report: System Log Analysis for Anomaly Detection](https://pdfs.semanticscholar.org/2c1e/d7e32a85d72fb270ebd07a45641acfba02a9.pdf)
 * [Use of K-Nearest Neighbor classifier for intrusion detection](http://web.cs.ucdavis.edu/~vemuri/papers/knn-ss02.pdf)
