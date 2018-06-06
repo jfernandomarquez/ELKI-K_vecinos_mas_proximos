@@ -112,15 +112,15 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones.
 
-** Inspiración: **
+**Inspiración:**
 
-([Anomaly detection rules - IBM](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html))
+[Anomaly detection rules - IBM](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html)
 
 [Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://github.com/repat/README-template/blob/master/README-websites-gh-pages.md)
 
 ### Alertar cuando un usuarios se conecte en horarios fuera de oficina
 
-1. Programar un busqueda en horarios fuera de oficina cada 30 min.
+1. Programar un busqueda en horarios fuera de oficina cada 10 min.
 2. Cuando se tenga un usuario diferente a los autorizados enviar una alerta por correo.
 
 ### Alertar cuando usuario se conecte por VPN en un pais diferente a CO
