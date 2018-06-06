@@ -38,6 +38,9 @@ Ahora para el dataset se debe indicar que información se necesita. Las anomalia
 * Los acceso exitosos aparece menos veces que lo usual
 * Los acceso exitosos deja de aparecer
 * Un usuario nuevo aparece
+* Modification of any data characteristics, including access control permissions or labels, location in database or file system, or data ownership. Administrators can detect if their configurations were changed.
+
+> All authentication events (logging in, logging out, failed logins, etc.) that allow to detect brute force and guessing attacks.
 
 > Algunos ejemplos de archivos de logs son: transaction log file, event log file, audit log file, server logs, etc. Syslog messages provide the information by where, when and why, i.e., IP-Address, Timestamp and the log message.
 
