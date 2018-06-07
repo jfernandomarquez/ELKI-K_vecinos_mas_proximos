@@ -39,17 +39,18 @@ $./KNN.sh mydata/exampledata.txt 5
 
 ## Establecer los parametros de entrada para el algoritmo KNN
 
-Las entradas para el algoritmo KNN son un numero positivo K y un dataset. Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 5 y 20, según [Anomaly Detection in Application Log Data](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y), [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf) y [Use of K-Nearest Neighbor classifier for intrusion detection](http://web.cs.ucdavis.edu/~vemuri/papers/knn-ss02.pdf)
+Las entradas para el algoritmo KNN son un numero positivo K y un dataset. Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 5 y 20, según [1] [4] y [5] [Bibliografía](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Bibliografia.md)
 
 Ahora para el dataset se debe indicar que información se necesita. Las anomalias que se quieren detectar en los logs de las aplicaciones son:
 
 * Los acceso exitosos aparece más veces que lo usual
 * Los acceso exitosos aparece menos veces que lo usual
-* Los acceso exitosos deja de aparecer
-* Un usuario nuevo aparece
-* Modification of any data characteristics, including access control permissions or labels, location in database or file system, or data ownership. Administrators can detect if their configurations were changed.
+* Acceso exitosos en horarios no laborales
+* Los intentos de inicio de sesión fallidos aparece más veces que lo usual.
+* Modificación de cualquier caracterista de los datos, incluyendo permisos de accesos o etiquetas, localización en bases de datos o sistema de archivos, o propiedad de los datos.
 
-> All authentication events (logging in, logging out, failed logins, etc.) that allow to detect brute force and guessing attacks.
+Para ello se necesita todos los eventos de autenticación (logging in, logging out, failed logins, etc.) que permita detectar ataque por fuerza bruta o intentos de adivinar contraseñas.
+
 
 > Algunos ejemplos de archivos de logs son: transaction log file, event log file, audit log file, server logs, etc. Syslog messages provide the information by where, when and why, i.e., IP-Address, Timestamp and the log message.
 
