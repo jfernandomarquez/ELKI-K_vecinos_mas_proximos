@@ -17,7 +17,7 @@ Bibliografía
 
 [6] [Effective Techniques to Detect Anomalies in System Logs](https://pdfs.semanticscholar.org/3564/174625ef21cb916e9d245d5fdcbd0178fc9a.pdf) ()
 
-[7] [KNN Based Outlier Detection Algorithm in Large Dataset](https://ieeexplore.ieee.org/document/5070231/)
+[7] [KNN Based Outlier Detection Algorithm in Large Dataset](https://ieeexplore.ieee.org/document/5070231/) ()
 
 **cita:** P. Yang and B. Huang, "KNN Based Outlier Detection Algorithm in Large Dataset," 2008 International Workshop on Education Technology and Training & 2008 International Workshop on Geoscience and Remote Sensing, Shanghai, 2008, pp. 611-613.
 
