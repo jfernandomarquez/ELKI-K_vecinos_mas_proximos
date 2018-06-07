@@ -13,6 +13,8 @@ Bibliografía
 
 [5] [Detecting Anomalies in System Log Files using Machine Learning Techniques], link: ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf ()
 
+cita: Jakub, Breier & Branišová, Jana. (2015). Anomaly Detection from Log Files Using Data Mining Techniques. Lecture Notes in Electrical Engineering. 339. 449-457. 10.1007/978-3-662-46578-3_53. 
+
 [6] [Effective Techniques to Detect Anomalies in System Logs](https://pdfs.semanticscholar.org/3564/174625ef21cb916e9d245d5fdcbd0178fc9a.pdf) ()
 
 ## Secundarios
