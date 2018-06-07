@@ -107,7 +107,7 @@ Arbitrariamente se dice que si la puntuación que da el algoritmo a los datos es
 
 ## Resultados
 
-[![Graficas](https://raw.githubusercontent.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/master/Figuras/grafica_anomalias.jpg)
+![Graficas](https://raw.githubusercontent.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/master/Figuras/grafica_anomalias.jpg)
 
 ## Procedimiento para alertar sobre anomalías 
 
