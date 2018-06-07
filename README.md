@@ -103,30 +103,26 @@ Arbitrariamente se dice que si la puntuación que da el algoritmo a los datos es
 
 ![Graficas](https://raw.githubusercontent.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/master/Figuras/grafica_anomalias.jpg)
 
-## Procedimiento para alertar sobre anomalías 
+## Procedimiento para alertar anomalías 
 
-Con el fin de enviar correo con el detalle de la anomalía detectada al personal correspondiente, debemos seguir los siguientes pasos:
-
-1. crear y guardar un busqueda por el evento indeseable, y guardar la cuenta mas algún id que permita saber a que grupo se refiere.
-
-2. Aplicar el algoritmo de detección de anomalías a la busqueda guardada, y cuando la puntuación que da el algoritmo supere un umbral enviar la información que permita identificar esos eventos al grupo a elasticsearch.
-
-3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones, como se observa [aquí](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Configuracion_watchers_sentinl.md). 
+Con el fin de enviar correo con el detalle de la anomalía detectada al personal correspondiente, se debe: identificar la anomalía, almacenar la información sobre la anomalía en *elasticsearch* con un PUT, programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones, como se observa [aquí](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Configuracion_watchers_sentinl.md) que pueda ser activada cada vez que una posible amenaza sea registrada y gracias esto permita enviar por correo la información del detalle de la amenaza.
 
 *Inspiración:*
 
-[Anomaly detection rules - IBM](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html)
+[*Anomaly detection rules - IBM*](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html)
 
-[Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://github.com/repat/README-template/blob/master/README-websites-gh-pages.md)
+## Alertas
 
-### Alertar cuando un usuarios se conecte en horarios fuera de oficina
+### Cantidad anormal de intentos fallidos de inicios de sesión
+
+### Inicios de sesión en horarios fuera de oficina
 
 1. Programar un busqueda en horarios fuera de oficina cada 10 min.
 2. Cuando se tenga un usuario diferente a los autorizados enviar una alerta por correo.
 
-### Alertar cuando usuario se conecte por VPN en un pais diferente a CO
+### Alertar cuando existan conexiones por VPN en un pais diferente a CO
 
-1. Utilizar la utilidad de detección de anomalías de sentinl 
+Utilizar la utilidad de detección de anomalías de sentinl 
 
 
 > "Is the data the same as yesterday at the same time?"
