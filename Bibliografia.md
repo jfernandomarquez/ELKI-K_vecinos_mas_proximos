@@ -11,7 +11,7 @@ Bibliografía
 
 [4] [Use of K-Nearest Neighbor classifier for intrusion detection](http://web.cs.ucdavis.edu/~vemuri/papers/knn-ss02.pdf)
 
-[5] [Detecting Anomalies in System Log Files using Machine Learning Techniques], link: ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf ()
+[5] Detecting Anomalies in System Log Files using Machine Learning Techniques, link: ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf ()
 
 cita: Jakub, Breier & Branišová, Jana. (2015). Anomaly Detection from Log Files Using Data Mining Techniques. Lecture Notes in Electrical Engineering. 339. 449-457. 10.1007/978-3-662-46578-3_53. 
 
