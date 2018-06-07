@@ -11,7 +11,9 @@ Bibliografía
 
 [4] [Use of K-Nearest Neighbor classifier for intrusion detection](http://web.cs.ucdavis.edu/~vemuri/papers/knn-ss02.pdf)
 
-[5] [Detecting Anomalies in System Log Files using Machine Learning Techniques](ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf) ()
+[5] [Detecting Anomalies in System Log Files using Machine Learning Techniques], link: ftp://ftp.informatik.uni-stuttgart.de/pub/library/medoc.ustuttgart_fi/BCLR-0148/BCLR-0148.pdf ()
+
+[6] [Effective Techniques to Detect Anomalies in System Logs](https://pdfs.semanticscholar.org/3564/174625ef21cb916e9d245d5fdcbd0178fc9a.pdf) ()
 
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
