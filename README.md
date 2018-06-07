@@ -39,18 +39,15 @@ $./KNN.sh mydata/exampledata.txt 5
 
 ## Establecer los parametros de entrada para el algoritmo KNN
 
-Las entradas para el algoritmo KNN son un numero positivo K y un dataset. Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 5 y 20, según [1] [4] y [5] [Bibliografía](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Bibliografia.md)
+Las entradas para el algoritmo KNN son un numero positivo K y un dataset. Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 5 y 20, según [1], [4] y [5]  que se pueden encontrar en la [Bibliografía](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Bibliografia.md).
 
 Ahora para el dataset se debe indicar que información se necesita. Las anomalias que se quieren detectar en los logs de las aplicaciones son:
 
 * Los acceso exitosos aparece más veces que lo usual
-* Los acceso exitosos aparece menos veces que lo usual
 * Acceso exitosos en horarios no laborales
 * Los intentos de inicio de sesión fallidos aparece más veces que lo usual.
-* Modificación de cualquier caracterista de los datos, incluyendo permisos de accesos o etiquetas, localización en bases de datos o sistema de archivos, o propiedad de los datos.
 
 Para ello se necesita todos los eventos de autenticación (logging in, logging out, failed logins, etc.) que permita detectar ataque por fuerza bruta o intentos de adivinar contraseñas.
-
 
 > Algunos ejemplos de archivos de logs son: transaction log file, event log file, audit log file, server logs, etc. Syslog messages provide the information by where, when and why, i.e., IP-Address, Timestamp and the log message.
 
@@ -65,6 +62,7 @@ Por lo tanto, se identificaron las siguientes variables que servirán como entra
 
 Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, el cual fue utilizado para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el algoritmo KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
 
+> **Para tener en cuenta:** también es objeto de monitoreo la modificación de cualquier caracterista de los datos, incluyendo permisos de accesos o etiquetas, localización en bases de datos o sistema de archivos, o propiedad de los datos.
 
 ### Extraer parametros para el algoritmo de Elasticsearch
 
