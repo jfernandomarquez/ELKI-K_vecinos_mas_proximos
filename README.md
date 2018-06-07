@@ -1,9 +1,11 @@
-# Implementación del algoritmo KNN del framework ELKI
+# Implementación del Algoritmo KNN del Framework ELKI en un Ecosistema ELK.
+
+Con en fin de identificar y alertar comportamientos fuera de lo normal en los sistemas de información, se busca de aplicar algoritmos de *machine learning* a los registros del sistema que se encuntran centralizados almacenado en *elasticsearch*.
 
 **Idea principal del algoritmo:** “A point in a data set is an outlier with respect to parameters k and d if no more than k
 points in the data set are at a distance of d or less from p.” [Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
 
-El algoritmo KNN de ELKI esta desarrollado en java y se usara como Herramiento de la interfaz de linea de comandos.
+El algoritmo KNN de ELKI esta desarrollado en java y se usara como herramiento de la interfaz de linea de comandos.
 
 ## Ejecutar los algoritmos de ELKI
 
@@ -35,8 +37,6 @@ $./KNN.sh mydata/exampledata.txt 5
 
 > Este es el script [KNN.sh](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/KNN.sh), que sirve, además de ejecutar el algoritmo en el dataset, para mostrar los resultados.
 
-
-
 ## Establecer los parametros de entrada para el algoritmo KNN
 
 Las entradas para el algoritmo KNN son un numero positivo K y un dataset. Según la bibliografía estudiada los mejores valores para k en el análisis de logs con KNN se encuentran entre 5 y 20, según [1], [4] y [5]  que se pueden encontrar en la [Bibliografía](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Bibliografia.md).
@@ -60,19 +60,17 @@ Por lo tanto, se identificaron las siguientes variables que servirán como entra
 * Minuto
 * Cuenta
 
-Gracias a la ayuda de @PatrickKostjens se pudo trabajar con un generador de entradas artificiales para el algoritmos de detección de anomalías, el cual fue utilizado para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el algoritmo KNNoutlier. Esto ayudo a identificar las variables antes mencionadas.
+Gracias a la ayuda de @PatrickKostjens autor de [1], se pudo trabajar con un generador de datasets artificiales que sirven como entrada para el algoritmos de detección de anomalías, el cual fue utilizado en su tesis para comparar varios algoritmos y concluir que el mejor comportamiento lo daba el algoritmo KNNoutlier.
 
 > **Para tener en cuenta:** también es objeto de monitoreo la modificación de cualquier caracterista de los datos, incluyendo permisos de accesos o etiquetas, localización en bases de datos o sistema de archivos, o propiedad de los datos.
 
-### Extraer parametros para el algoritmo de Elasticsearch
+### Generar dataset con información de Elasticsearch para el algoritmo KNNoutlier 
 
-**¿Cómo se va a hacer?**
+**Procedimiento:**
+Consultar cuantas veces un evento en especifico se registró en elasticsearch durante un tiempo determinado, ejemplos: Accesos exitosos, fallo en la autenticación, etc. Luego se almacena la cuenta de eventos(hits) en un archivo de texto plano que sera el dataset, acompañado de información de fecha y hora. Este archivo sera una de las entradas del algoritmo de deteción de anomalias KNNoutlier.
 
-* Consultar (query) una evento en especifico en elasticsearch cada 5 min usando python, ejemplo: Accesos exitosos, fallo en la autenticación, etc.
-* Almacenar la cuenta(hits) en un dataset, junto con el timestamp.
-* Usar el algoritmo de deteción de anomalias KNNoutlier.
+A continuación se muestra un ejemplo de la consulta que se le hace a elasticsearch. Esta consultalos devuelve la cantidad de eventos de acceso exitos en los ultimos 5 minutos:
 
-**Query:**
 ```javascript
 GET /logstash-*/_search?filter_path=hits.total
 {
@@ -98,17 +96,18 @@ GET /logstash-*/_search?filter_path=hits.total
 }
 
 ```
->Nota: Este query consulta la cantidad de acceso exitosos en los ultimos 5 minutos.
 
-Con el fin de tener los datos de entrada del algoritmo en la forma que lo necesita KNNoutlier, se desarrollo el script *QueryingES_v5.py*
+Con el fin de tener los datos de entrada del algoritmo en una forma apropiada para KNNoutlier y hacer la consulta periodicamente, se desarrollo el script [creando_dataset_real_v6.py](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/creando_dataset_real_v6.py)
 
-Corriendo el colector de datos durante 24 horas, con una tasa de consulta de 5min, se genero un archivo de 10KB.
+> **nota:** Corriendo script colector de datos durante 24 horas, con una tasa de consulta de 5min, se genero un archivo de 10KB.
 
-## Aplicar KNNoutlier con dataset real
+## Experimento
 
-Lo primero que se debemos hacer es dejar recolectar información, dejando correr el script *QueryingES_v5.py*...
+Arbitrariamente se dice que si la puntuación que da el algoritmo a los datos es mayor a ___ con un k=5,10,20 se le etiquetará como anomalía.
 
-Se aplica el algoritmo de KNNoutlier, identificando comportamiento fuera de lo normal debido a la puntuación que le da el algoritmo a cada grupo de logs. 
+
+
+## Resultados
 
 ## Procedimiento para alertar sobre anomalías 
 
