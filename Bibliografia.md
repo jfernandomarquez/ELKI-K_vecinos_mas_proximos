@@ -3,7 +3,7 @@ Bibliografía
 
 ## Principales
 
-[1] [Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://github.com/repat/README-template/blob/master/README-websites-gh-pages.md)
+[1] [Anomaly Detection in Application Log Data, Patrick KOSTJENS](https://dspace.library.uu.nl/bitstream/handle/1874/338664/thesis-patrick-kostjens.pdf?sequence=2&isAllowed=y)
 
 [2] [Efficient Algorithms for Mining Outliers from Large DataSets, Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
 
