@@ -105,9 +105,9 @@ Con el fin de tener los datos de entrada del algoritmo en una forma apropiada pa
 
 Arbitrariamente se dice que si la puntuación que da el algoritmo a los datos es mayor a ___ con un k=5,10,20 se le etiquetará como anomalía.
 
-
-
 ## Resultados
+
+[![Graficas](https://raw.githubusercontent.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/master/Figuras/grafica_anomalias.jpg)
 
 ## Procedimiento para alertar sobre anomalías 
 
