@@ -21,7 +21,7 @@ Bibliografía
 
 **cita:** P. Yang and B. Huang, "KNN Based Outlier Detection Algorithm in Large Dataset," 2008 International Workshop on Education Technology and Training & 2008 International Workshop on Geoscience and Remote Sensing, Shanghai, 2008, pp. 611-613.
 
-[8] [Efficient Algorithms for Mining Outliers from Large Data Sets, Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
+[8] 
 
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
