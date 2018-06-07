@@ -25,6 +25,8 @@ Bibliografía
 
 [9] [SENTINL Docs](http://sentinl.readthedocs.io/en/latest/)
 
+[10] [Elastic Stack and Product Documentation](https://www.elastic.co/guide/index.html)
+
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
 * [Anomaly Detection from Log Files Using Data Mining Techniques](http://jbreier.com/files/papers/icisa_2015.pdf)
