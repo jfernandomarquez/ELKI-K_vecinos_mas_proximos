@@ -113,7 +113,7 @@ Con el fin de enviar correo con el detalle de la anomalía detectada al personal
 
 3. Programar un regla en [sentinl](https://docs.search-guard.com/latest/search-guard-sentinl) (plugin de ELK) para enviar correos cuando al buscar lo que se subió a elasticsearch concida con ciertas condiciones, como se observa [aquí](https://github.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/blob/master/Configuracion_watchers_sentinl.md). 
 
-**Inspiración:**
+*Inspiración:*
 
 [Anomaly detection rules - IBM](https://www.ibm.com/support/knowledgecenter/en/SS42VS_7.3.0/com.ibm.qradar.doc/c_qradar_rul_anomaly_detection.html)
 
