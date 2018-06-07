@@ -1,23 +1,17 @@
 # Implementación del Algoritmo KNN del Framework ELKI en un Ecosistema ELK.
 
-Con en fin de identificar y alertar comportamientos fuera de lo normal en los sistemas de información, se busca de aplicar algoritmos de *machine learning* a los registros del sistema que se encuntran centralizados almacenado en *elasticsearch*.
-
-**Idea principal del algoritmo:** “A point in a data set is an outlier with respect to parameters k and d if no more than k
-points in the data set are at a distance of d or less from p.” [Ramaswamy et al., 2000](https://webdocs.cs.ualberta.ca/~zaiane/pub/check/ramaswamy.pdf)
-
-El algoritmo KNN de ELKI esta desarrollado en java y se usara como herramiento de la interfaz de linea de comandos.
+Con en fin de identificar y alertar comportamientos fuera de lo normal en los sistemas de información, se busca aplicar algoritmos de *machine learning* a los registros del sistema que se encuentran centralizados en *elasticsearch*.
 
 ## Ejecutar los algoritmos de ELKI
 
-Se pudo ejecutar los algoritmos en un centOS sin interfaz gráfica usando el comando:
+El algoritmo KNN de ELKI esta desarrollado en java y se puede usar como herramiento de la interfaz de linea de comandos. Para ejecutar los algoritmos en la terminal de un linux se usa el siguiente comando:
 
 ```javascript
 java -jar elki-bundle-0.7.1.jar KDDCLIApplication -dbc.in mydata/mouse.csv -algorithm clustering.kmeans.KMedoidsEM -kmeans.k 1 -resulthandler ResultWriter -out.gzi -out output/k-1
 ```
-
 > Aquí se puede descargar el .jar: [elki-bundle-0.7.1.jar](https://elki-project.github.io/releases/release0.7.1/elki-bundle-0.7.1.jar).
 
-El algoritmo que para este caso nos interesa usar de todos los que hay en el framework ELKI es el KNNOutlier. Un ejemplo de como puede ser ejecutado es el siguiente:
+El algoritmo que nos interesa usar, de todos los que hay en el framework ELKI, es el KNNOutlier. Ya que Patrick KOSTJENS en su tesis [1] hizo una comparación de los algoritmos y concluyó que este algoritmo tenia el mejor comportamiento. Un ejemplo de como puede ser ejecutado es el siguiente:
 
 ```javascript
 _java -jar elki-bundle-0.7.1.jar KDDCLIApplication -verbose -dbc.in dataset.txt -algorithm outlier.distance.KNNOutlier -knno.k 5
@@ -64,7 +58,7 @@ Gracias a la ayuda de @PatrickKostjens autor de [1], se pudo trabajar con un gen
 
 > **Para tener en cuenta:** también es objeto de monitoreo la modificación de cualquier caracterista de los datos, incluyendo permisos de accesos o etiquetas, localización en bases de datos o sistema de archivos, o propiedad de los datos.
 
-### Generar dataset con información de Elasticsearch para el algoritmo KNNoutlier 
+## Generar dataset con información de Elasticsearch para el algoritmo KNNoutlier 
 
 **Procedimiento:**
 Consultar cuantas veces un evento en especifico se registró en elasticsearch durante un tiempo determinado, ejemplos: Accesos exitosos, fallo en la autenticación, etc. Luego se almacena la cuenta de eventos(hits) en un archivo de texto plano que sera el dataset, acompañado de información de fecha y hora. Este archivo sera una de las entradas del algoritmo de deteción de anomalias KNNoutlier.
@@ -105,7 +99,7 @@ Con el fin de tener los datos de entrada del algoritmo en una forma apropiada pa
 
 Arbitrariamente se dice que si la puntuación que da el algoritmo a los datos es mayor a ___ con un k=5,10,20 se le etiquetará como anomalía.
 
-## Resultados
+## Resultados Esperados
 
 ![Graficas](https://raw.githubusercontent.com/jfernandomarquez/Log-Based-Outlier-Detection-KNN-ELKI-en-Elasticsearch/master/Figuras/grafica_anomalias.jpg)
 
