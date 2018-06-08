@@ -27,7 +27,7 @@ Bibliografía
 
 [10] [Elastic Stack and Product Documentation](https://www.elastic.co/guide/index.html)
 
-[11][A k-Nearest Neighbors Method for Classifying User Sessions in E-Commerce Scenario](https://www.itl.waw.pl/czasopisma/JTIT/2015/3/64.pdf)
+[11] [A k-Nearest Neighbors Method for Classifying User Sessions in E-Commerce Scenario](https://www.itl.waw.pl/czasopisma/JTIT/2015/3/64.pdf) ()
 
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
