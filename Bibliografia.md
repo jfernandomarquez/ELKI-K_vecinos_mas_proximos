@@ -29,6 +29,9 @@ Bibliografía
 
 [11] [A k-Nearest Neighbors Method for Classifying User Sessions in E-Commerce Scenario](https://www.itl.waw.pl/czasopisma/JTIT/2015/3/64.pdf) ()
 
+[12] [Log-Based Anomaly Detection for System
+Surveillance](http://publications.lib.chalmers.se/records/fulltext/219089/219089.pdf)
+
 ## Secundarios
 * [Execution Anomaly Detection in Distributed Systems through Unstructured Log Analysis](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DM790-CR.pdf)
 * [Anomaly Detection from Log Files Using Data Mining Techniques](http://jbreier.com/files/papers/icisa_2015.pdf)
