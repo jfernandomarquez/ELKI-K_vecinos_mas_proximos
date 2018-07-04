@@ -1,3 +1,5 @@
+#Basado en algoritmo usado por patrick kostjens en su tesis de maestria
+
 #!/usr/bin/env python3
 # coding=utf-8
 import datetime
